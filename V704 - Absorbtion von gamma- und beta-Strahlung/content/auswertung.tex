@@ -1,0 +1,176 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+\subsection{\texorpdfstring{$\gamma$ -Strahlung }%
+                               {gamma -Strahlung}}
+Die Nullmessung ohne radioaktives Präperat ergibt eine Hintergrundstrahlung von
+\begin{equation}
+  (\num{800 +- 30}) \text{ counts in } 900 \text{s} \ .
+  \label{eqn:gammacoun}
+\end{equation}
+Normiert man diese Impulszahl auf die Zählrate ergibt sich die Hintergrundzählrate $A_0$ von
+\begin{equation}
+  A_0 = (\num{0.89 +- 0.03}) \, \text{cps} \ .
+  \label{eqn:A0}
+\end{equation}
+Im weiteren Verlauf wird von den gemessenenen Messwerten die Hintergrundzählrate abgezogen. Die gemessenen Impulsraten in Abhängigkeit der Abschirmdicke für Blei, sind in Tabelle \ref{tab:ABlei} aufgetragen, sowie die bereinigte Zählrate.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c}
+    \toprule
+    Dicke d / $10^{-3}$ m & Zeit t / s & Impulszahl N & Aktivität A / $\frac{1}{s}$ \\
+    \midrule
+    	1.2	&40 	&5276	&\num{132 +- 2} 	\\
+	2.4	&40 	&4776	&\num{119 +- 2}	\\
+	3.6	&40 	&4259	&\num{106 +- 2}	\\
+	10.0	&40 	&1907	&\num{48 +- 1}	\\
+	11.2	&40 	&1811	&\num{45 +- 1}	\\
+	12.4	&40 	&1644	&\num{41 +- 1}	\\
+	13.6	&40 	&1479	&\num{37 +- 1}	\\
+	20.0	&40 	&707	&\num{18 +- 1}	\\
+	21.2	&40 	&624	&\num{16 +- 1}	\\
+	22.4	&40 	&598	&\num{15 +- 1}	\\
+	23.4	&40 	&543	&\num{14 +- 1}	\\
+	30.0	&40 	&280	&\num{7.0 +- 0.4}	\\
+	40.0	&100	&292	&\num{2.9 +- 0.2}	\\
+	50.0	&200	&294	&\num{1.5 +- 0.2}	\\
+	60.0	&250	&304	&\num{1.2 +- 0.1}	\\
+    \bottomrule
+  \end{tabular}
+  \caption{Aktivität nach Abschirmung durch Blei}
+  \label{tab:ABlei}
+\end{table}
+In Diagramm \ref{fig:Blei} wird die Dicke auf der x-Achse gegen die Zählrate auf der logarithmierten y-Achse aufgetragen. Anhand eines Fittes der Form
+\begin{equation}
+  y_\text{fit} = \text{exp}(\mu \cdot x + b)
+  \label{eqn:fit}
+\end{equation}
+wird ein Absorbtionskoeffizient µ von
+\begin{equation}
+  \mu_\text{Blei} = (\num{106 +- 2}) \frac{1}{m}
+  \label{eqn:absK}
+\end{equation}
+ermittelt so wie eine Anfangsaktivität $N(0)$ von
+\begin{equation}
+  N_\text{Blei}(0) = \num{148 +- 6} \, \frac{1}{\text{s}} \ .
+  \label{eqn:NBlei}
+\end{equation}
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{Blei.pdf}
+  \caption{Zählrate in Abhängigkeit der Abschirmung durch Blei}
+  \label{fig:Blei}
+\end{figure}
+Der mittels Formel \ref{eqn:} und \ref{eqn:} berechnet Compton-Absorptionskoeffizient beträgt
+\begin{equation}
+  \mu_\text{com} = 68.14 \, \frac{1}{\text{m}} \ .
+  \label{eqn:}
+\end{equation}
+Bei der Berechnung wurde eine Molvolumen von 18.26 $\text{cm}^3\text{mol}^{-1}$ (\cite{Kupfer}) angenommen.
+Die gemessenen Werte für Kupfer und die Zählrate sind in Tabelle \ref{tab:AKupfer} aufgetragen. Der Absorbtionskoeffizient sowie die Anfangsaktivität wird analog zum Blei aus den Fitts in Abbildung \ref{fig:Kupfer} berechnet.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c}
+    \toprule
+    Dicke d / $10^{-3}$ m & Zeit t / s & Impulszahl N & Aktivität A / $\frac{1}{s}$ \\
+    \midrule
+    0.5		&40	&5484&	\num{137 +- 2} \\
+    1.0		&40	&5459&	\num{136 +- 2} \\
+    1.5		&40	&5314&	\num{133 +- 2} \\
+    2.0		&40	&4413&	\num{110 +- 2} \\
+    2.5		&40	&5168&	\num{129 +- 2} \\
+    3.1		&40	&4982&	\num{125 +- 2} \\
+    3.6		&40	&4682&	\num{117 +- 2} \\
+    4.1		&40	&4351&	\num{108 +- 2} \\
+    5.0		&40	&4498&	\num{112 +- 2} \\
+    5.5		&40	&4165&	\num{104 +- 2} \\
+    6.0		&40	&4383&	\num{110 +- 2} \\
+    6.5		&40	&4192&	\num{105 +- 2} \\
+    7.0		&40	&4444&	\num{105 +- 2} \\
+    8.1		&40	&4169&	\num{104 +- 2} \\
+    10.0	&40	&3475&	\num{90 +- 1} \\
+    13.1	&40 	&2784&	\num{70 +- 1} \\
+    18.1	&40	&2183&	\num{55 +- 1} \\
+    20.0	&40	&2246&	\num{56 +- 1} \\
+    30.0	&40 	&1319&	\num{34 +- 1} \\
+    40.0    	&40 	&719&	\num{18 +- 1} \\
+    50.0    	&40 	&601&	\num{15 +- 1} \\
+    60.0	&40 	&328&	\num{8 +- 1} \\
+    \bottomrule
+  \end{tabular}
+  \caption{Aktivität nach Abschirmung durch Kupfer}
+  \label{tab:AKupfer}
+\end{table}
+Die Aktivität von Kupfer beträgt
+\begin{equation}
+  \mu_\text{Kupfer} = \num{ 47 +- 3 } \, \frac{1}{m}
+  \label{eqn:muku}
+\end{equation}
+und die Anfangsaktivität bestimmt über die Kupferabschirmung von
+\begin{equation}
+  N_\text{Kupfer}(0) = \num{134 +- 13} \, \frac{1}{s} \ .
+  \label{eqn:NKu}
+\end{equation}
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{Kupfer.pdf}
+  \caption{Zählrate in Abhängigkeit der Abschirmung durch Kupfer}
+  \label{fig:Kupfer}
+\end{figure}
+Der unter verwendung des Molvolumens von 7.11 $\text{m}^3 / $mol (\cite{Kupfer}) berechnete theoretische Compton-Absorptionskoeffizient beträgt
+\begin{equation}
+  \nu_\text{comp} = 61.89 \frac{1}{m} \ .
+  \label{eqn:Kc}
+\end{equation}
+\subsection{\texorpdfstring{$\beta$ -Strahlung }%
+                               {beta -Strahlung}}
+Die Hintergrundstrahlung des $\beta$-Strahlungsversuch beträgt
+\begin{equation}
+  (\num{248 +- 15}) \text{ cps in } 900 \text{s}
+  \label{eqn:hintb}
+\end{equation}
+woraus sich eine Hintergrundaktivität von
+\begin{equation}
+  (\num{0.275 +- 0.004}) \frac{1}{s}
+  \label{eqn:HAB}
+\end{equation}
+berechnet. Diese wird im weiteren Verlauf von den berechneten Aktivitäten abgezogen. Die gemessenen Zählraten zu den enstprechenden Dicken, sowie die berechneten Aktivitäten sind in Tabelle \ref{tab:AAlu} aufgelistet.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c}
+    \toprule
+    Dicke d / $10^{-6}$ m & Zeit t / s & Impulszahl N & Aktivität A / $\frac{1}{s}$ \\
+    \midrule
+    102&	40 &	1374&	\num{34 +-1 } \\
+    126&	40 &	719&	\num{18 +-1 } \\
+    153&	40 &	297&	\num{7.4 +- 0.4 } \\
+    160&	80 &	360&	\num{4.5 +- 0.2 } \\
+    200&	150&	275&	\num{1.8 +- 0.1 } \\
+    253&	450&	268&	\num{0.60 +-0.03 } \\
+    302&	600&	319&	\num{0.53 +-0.03 } \\
+    338&	650&	336&	\num{0.52 +-0.03 } \\
+    400&	650&	355&	\num{0.54 +-0.03 } \\
+    444&	600&	315&	\num{0.53 +-0.03} \\
+    482&	600&	340&	\num{0.57 +-0.03 } \\
+    \bottomrule
+  \end{tabular}
+  \caption{Aktivität nach Abschirmung durch Aluminium}
+  \label{tab:AAlu}
+\end{table}
+In dem Diagramm \ref{fig:Alu} wird die Massenbelgung gegen die Zählrate aufgetragen.
+\begin{figure}
+  \centering
+  \includegraphics[height=8cm]{Aluminium.pdf}
+  \caption{Ausgleichungsrechnung zur Bestimmung der Gesamtenergie}
+  \label{fig:Alu}
+\end{figure}
+Mittels dem Schnittpunkt von zwei exponentiellen Fitts der From \eqref{eqn:fit} wird die Maximale Massenbelgeung berechnet. Sie beträgt
+\begin{equation}
+  R_\text{Max} = \num{0.65 +- 0.07} \, \frac{\text{kg}}{\text{m}^2} \ .
+  \label{eqn:Rmax}
+\end{equation}
+Aus der Maximalen Massenbelgung wird die freiwerdende Gesamtenergie mittels Formel \eqref{eqn:} berechnet und beträgt
+\begin{equation}
+  E_\text{max} = \num{0.26 +- 0.2} \, \text{MeV}
+  \label{eqn:max}
+\end{equation}
+berechnet.
